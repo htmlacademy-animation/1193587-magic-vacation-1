@@ -88,7 +88,6 @@
   top: 100%;
   right: 0;
   margin-top: 1.5rem;
-  // opacity: 0;
   pointer-events: none;
 
   @media (min-width: $stop-scaling) {
@@ -101,7 +100,6 @@
     justify-content: center;
     align-items: center;
     margin-top: 0;
-    opacity: 1;
     pointer-events: auto;
   }
 
@@ -111,7 +109,6 @@
     justify-content: center;
     align-items: center;
     margin-top: 0;
-    opacity: 1;
     pointer-events: auto;
   }
 
@@ -139,7 +136,6 @@
   }
 
   .social-block--active & {
-    // opacity: 1;
     pointer-events: auto;
 
     li {
@@ -171,10 +167,12 @@
 
     @media (max-width: $tablet) and (orientation: portrait) {
       margin: 0 1.25rem;
+      opacity: 1;
     }
 
     @media (max-width: $mobile) and (orientation: landscape) {
       margin: 0 1.25rem;
+      opacity: 1;
     }
   }
 }
