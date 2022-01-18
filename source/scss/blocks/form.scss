@@ -43,6 +43,7 @@
   border: 0;
   border-radius: 3rem;
   outline: none;
+  animation: field-entrance 0.5s both;
 
   &:focus {
     border: 1px solid $c-purple;
@@ -143,6 +144,69 @@
 
     @media (max-width: $mobile) and (orientation: landscape) {
       width: calc(100% - 5rem);
+    }
+  }
+}
+
+@keyframes field-entrance {
+  0% {
+    width: 0;
+    margin-left: calc(100% - 21rem);
+  }
+  100% {
+    width: calc(100% - 21rem);
+    margin-left: 0;
+  }
+}
+
+@media (min-width: $stop-scaling) {
+  @keyframes field-entrance {
+    0% {
+      width: 0;
+      margin-left: calc(100% - 210px);
+    }
+    100% {
+      width: calc(100% - 210px);
+      margin-left: 0;
+    }
+  }
+}
+
+@media (orientation: portrait) {
+  @keyframes field-entrance {
+    0% {
+      width: 0;
+      margin-left: calc(100% - 5rem);
+    }
+    100% {
+      width: calc(100% - 5rem);
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: $tablet) and (orientation: landscape) {
+  @keyframes field-entrance {
+    0% {
+      width: 0;
+      margin-left: calc(100% - 9rem);
+    }
+    100% {
+      width: calc(100% - 9rem);
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: $mobile) and (orientation: landscape) {
+  @keyframes field-entrance {
+    0% {
+      width: 0;
+      margin-left: calc(100% - 5rem);
+    }
+    100% {
+      width: calc(100% - 5rem);
+      margin-left: 0;
     }
   }
 }
