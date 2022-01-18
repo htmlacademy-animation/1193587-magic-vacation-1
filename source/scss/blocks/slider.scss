@@ -39,6 +39,7 @@
   &:nth-child(even) {
     .slider__item-text {
       align-self: flex-end;
+      animation: fade-in-from-right 0.5s ease-out 0.5s both;
 
       @media (max-width: $mobile) and (orientation: landscape) {
         align-self: flex-start;
@@ -96,6 +97,7 @@
   max-width: 34rem;
   font-size: 1.8rem;
   line-height: 2rem;
+  animation: fade-in-from-right 0.3s ease-out;
 
   @media (min-width: $stop-scaling) {
     margin-top: 36px;
@@ -274,5 +276,16 @@
       height: 0.4rem;
       background-color: $c-light;
     }
+  }
+}
+
+@keyframes fade-in-from-right {
+  0% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
