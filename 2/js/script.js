@@ -10776,7 +10776,7 @@ const bodyElement = document.querySelector(`body`);
 
 // load the page
 document.addEventListener(`DOMContentLoaded`, () => {
-  bodyElement.classList.add(`vacation-load`);
+  bodyElement.classList.add(`page-loaded`);
 });
 
 // init modules
