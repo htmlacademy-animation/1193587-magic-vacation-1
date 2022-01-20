@@ -308,15 +308,15 @@
   }
 }
 
-.vacation-load .page-header__nav {
+.page-loaded .page-header__nav {
   opacity: 1;
 }
 
-.vacation-load .page-header__menu a.active::after {
+.page-loaded .page-header__menu a.active::after {
   width: 100%;
 }
 
-.vacation-load .page-header__logo {
+.page-loaded .page-header__logo {
   opacity: 1;
   transform: translateX(0);
 }
