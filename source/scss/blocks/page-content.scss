@@ -1,0 +1,19 @@
+.page-content {
+  position: relative;
+}
+
+.page-content::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  background-color: #5f458c;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.page-content--prizes::before {
+  height: 100%;
+  transition: height 0.3s;
+}
