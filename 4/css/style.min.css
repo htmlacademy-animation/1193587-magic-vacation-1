@@ -3152,7 +3152,7 @@ img {
   content: counter(li);
   counter-increment: li;
   position: absolute;
-  top: 0;
+  top: 2px;
   left: 0;
   width: 4.5rem;
   height: 4.5rem;
@@ -3279,19 +3279,31 @@ img {
     transform: scale(0);
     color: transparent;
   }
+  to {
+    transform: scale(1);
+    color: #ffffff;
+  }
 }
 @keyframes rules-item-text {
   from {
     transform: translateX(20px);
     opacity: 0;
   }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 @keyframes rules-link {
+  0% {
+    color: transparent;
+    opacity: 0;
+  }
   80% {
     color: transparent;
     opacity: 1;
   }
-  to {
+  100% {
     width: 18rem;
     opacity: 1;
     color: #5f458c;
@@ -3299,6 +3311,10 @@ img {
 }
 @media (max-width: 768px) and (orientation: landscape) {
   @keyframes rules-link {
+    0% {
+      color: transparent;
+      opacity: 0;
+    }
     80% {
       color: transparent;
       opacity: 1;
@@ -3312,6 +3328,10 @@ img {
 }
 @media (max-width: 1024px) and (orientation: portrait) {
   @keyframes rules-link {
+    0% {
+      color: transparent;
+      opacity: 0;
+    }
     80% {
       color: transparent;
       opacity: 1;
