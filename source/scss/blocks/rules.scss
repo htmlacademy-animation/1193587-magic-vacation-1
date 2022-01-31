@@ -148,7 +148,7 @@
     content: counter(li);
     counter-increment: li;
     position: absolute;
-    top: 0;
+    top: 2px;
     left: 0;
     width: 4.5rem;
     height: 4.5rem;
@@ -248,6 +248,10 @@
     transform: scale(0);
     color: transparent;
   }
+  to {
+    transform: scale(1);
+    color: #ffffff;
+  }
 }
 
 @keyframes rules-item-text {
@@ -255,14 +259,22 @@
     transform: translateX(20px);
     opacity: 0;
   }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @keyframes rules-link {
+  0% {
+    color: transparent;
+    opacity: 0;
+  }
   80% {
     color: transparent;
     opacity: 1;
   }
-  to {
+  100% {
     width: 18rem;
     opacity: 1;
     color: #5f458c;
@@ -271,6 +283,10 @@
 
 @media (max-width: $mobile) and (orientation: landscape) {
   @keyframes rules-link {
+    0% {
+      color: transparent;
+      opacity: 0;
+    }
     80% {
       color: transparent;
       opacity: 1;
@@ -285,6 +301,10 @@
 
 @media (max-width: $tablet) and (orientation: portrait) {
   @keyframes rules-link {
+    0% {
+      color: transparent;
+      opacity: 0;
+    }
     80% {
       color: transparent;
       opacity: 1;
